@@ -1,0 +1,38 @@
+Ejercicios 1
+metros = float(input("Ingrese una cantidad en metros: "))
+kilometros = metros / 1000
+print(f"{metros} metros equivalen a {kilometros} kilómetros.")
+
+
+Ejercicio 2
+numero1 = float(input("Ingrese el primer número: "))
+numero2 = float(input("Ingrese el segundo número: "))
+
+mayor = max(numero1, numero2)
+menor = min(numero1, numero2)
+
+print(f"El número mayor es {mayor} y el número menor es {menor}.")
+
+
+Ejercicio 3
+numeros = []
+for i in range(5):
+    numero = float(input(f"Ingrese el número {i + 1}: "))
+    numeros.append(numero)
+
+for i in range(4):
+    for j in range(i + 1, 5):
+        if numeros[i] > numeros[j]:
+            numeros[i], numeros[j] = numeros[j], numeros[i]
+
+print("Números ordenados de forma ascendente:", numeros)
+
+
+Ejercicio 4 
+n = int(input("Ingrese el valor de n: "))
+i = n
+while i >= 1:
+    print(i, end=" ")
+    i -= 1
+
+
